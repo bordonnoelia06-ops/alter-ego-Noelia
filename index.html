@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alter ego - Noelia Bordón</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #173d35, #306653);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 30px 20px;
+            background: rgba(0, 0, 0, 0.15);
+            border-bottom: 2px solid #d4b678;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 10px 0;
+            color: #f1d9a5;
+        }
+
+        h2 {
+            font-size: 21px;
+            font-weight: normal;
+        }
+
+        .contenedor {
+            max-width: 850px;
+            margin: auto;
+            padding: 30px 20px 180px;
+        }
+
+        .avatar {
+            width: 280px;
+            max-width: 90%;
+            height: 380px;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 15px #0005);
+        }
+
+        .presentacion {
+            max-width: 650px;
+            margin: 20px auto;
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        .instruccion {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #d4b678;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px auto;
+        }
+
+        footer {
+            font-size: 14px;
+            color: #e0e5df;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Coloquio Final</h1>
+        <h2>Práctica Docente y Residencia IV</h2>
+        <p>Profesorado de Educación Secundaria en Lengua y Literatura</p>
+    </header>
+
+    <main class="contenedor">
+
+        <img
+            src="avatar.png"
+            alt="Representación digital de Noelia Bordón"
+            class="avatar"
+            onerror="this.style.display='none'"
+        >
+
+        <h1>Noelia Bordón</h1>
+        <h2>Mi alter ego digital</h2>
+
+        <div class="presentacion">
+            Hola, soy el alter ego digital de Noelia Bordón.
+            Estoy aquí para compartir su experiencia,
+            sus aprendizajes y sus reflexiones durante
+            las prácticas docentes.
+        </div>
+
+        <div class="instruccion">
+            <h2>Conversemos</h2>
+            <p>
+                Presioná el botón de conversación que aparece
+                en la pantalla, habilitá el micrófono y
+                realizame una pregunta sobre mi experiencia
+                en la residencia docente.
+            </p>
+        </div>
+
+        <footer>
+            Escuela Normal Superior República del Paraguay
+            <br>
+            Formosa, Argentina — 2026
+            <br>
+            Representación digital mediante inteligencia artificial.
+        </footer>
+
+    </main>
+
+    <elevenlabs-convai
+        agent-id="agent_9301m7kdhh5ke0cv28rbwtrsar54"
+        action-text="Conversá con mi alter ego"
+        start-call-text="Iniciar conversación"
+        end-call-text="Finalizar conversación"
+        listening-text="Escuchando..."
+        speaking-text="Hablando..."
+    ></elevenlabs-convai>
+
+    <script
+        src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+        async
+        type="text/javascript">
+    </script>
+
+</body>
+</html>
