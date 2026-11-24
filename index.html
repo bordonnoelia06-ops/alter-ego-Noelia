@@ -8,6 +8,31 @@
     <title>Alter ego - Noelia Bordón</title>
 
     <style>
+        @keyframes movimientoAvatar {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-3px) rotate(0.5deg);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.015);
+    }
+    75% {
+        transform: translateY(-3px) rotate(-0.5deg);
+    }
+}
+
+img.avatar {
+    animation: movimientoAvatar 5s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img.avatar {
+        animation: none;
+    }
+}
         * {
             box-sizing: border-box;
         }
